@@ -457,64 +457,149 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|INFO| <span class=" -Color -Color-Green">Setting cache dir to: /Users/avaj0001/Documents/projects/nrsurrogate_catalog/tests/test_events_dir</span> 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:58:03|INFO| <span class=" -Color -Color-Green">Setting cache dir to: /Users/avaj0001/Documents/projects/nrsurrogate_catalog/tests/test_events_dir</span> 
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">GW202612 not in [&#39;GW170729&#39;, &#39;GW180756&#39;, &#39;GW181242&#39;, &#39;GW190402&#39;, &#39;GW192102&#39;, &#39;GW201992&#39;], downloading...</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|INFO| <span class=" -Color -Color-Green">Setting cache dir to: /Users/avaj0001/Documents/projects/nrsurrogate_catalog/tests/test_events_dir</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/test.json</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/tmp_bogus_0.2617134886723267.txt</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/tmp_bogus_0.3353181914080371.txt</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/tmp_bogus_0.34377217756885825.txt</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/tmp_bogus_0.9297447985099586.txt</span> 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:54:13|DEBUG| <span class=" -Color -Color-Green">Could not parse event name from https://sandbox.zenodo.org/api/files/9372376b-2828-467e-9940-09d12a43e95d/tmp_bogus_0.9538792287577549.txt</span> 
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="nn">/var/folders/qt/rxjvm_j566v9qn7g754s1v9hzb3p7f/T/ipykernel_72925/1735102995.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">nrsur_result</span> <span class="o">=</span> <span class="n">NRsurResult</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;GW202612&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># cache_dir is where the events will be downloaded to (defaults to &quot;~/.nrsur_catalog_cache&quot;)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">nrsur_result</span><span class="o">.</span><span class="n">posterior_summary</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="nn">~/Documents/projects/nrsurrogate_catalog/src/nrsur_catalog/nrsur_result.py</span> in <span class="ni">load</span><span class="nt">(cls, event_name, cache_dir)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span>         <span class="k">if</span> <span class="n">CACHE</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">50</span>             <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">event_name</span><span class="si">}</span><span class="s2"> not in </span><span class="si">{</span><span class="n">CACHE</span><span class="o">.</span><span class="n">event_names</span><span class="si">}</span><span class="s2">, downloading...&quot;</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>             <span class="n">download_event</span><span class="p">(</span><span class="n">event_name</span><span class="p">,</span> <span class="n">cache_dir</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="n">event_path</span> <span class="o">=</span> <span class="n">CACHE</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">event_name</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span>         <span class="n">r</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="n">event_path</span><span class="p">)</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="nn">~/Documents/projects/nrsurrogate_catalog/src/nrsur_catalog/api/download_event.py</span> in <span class="ni">download_event</span><span class="nt">(event_name, cache_dir)</span>
-<span class="g g-Whitespace">     </span><span class="mi">56</span>     <span class="n">analysed_events</span> <span class="o">=</span> <span class="n">ZenodoInterface</span><span class="o">.</span><span class="n">get_event_urls</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">57</span>     <span class="k">if</span> <span class="n">event_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">analysed_events</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">58</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">59</span>             <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">event_name</span><span class="si">}</span><span class="s2"> has not been analysed yet -- please choose from </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">analysed_events</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">60</span>         <span class="p">)</span>
-
-<span class="ne">ValueError</span>: GW202612 has not been analysed yet -- please choose from [&#39;GW150914&#39;, &#39;GW170729&#39;, &#39;GW180756&#39;, &#39;GW181242&#39;, &#39;GW190402&#39;, &#39;GW192102&#39;, &#39;GW201992&#39;, &#39;GW203566&#39;, &#39;GW205890&#39;, &#39;GW206883&#39;, None]
-</pre></div>
-</div>
-</div>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Posterior 90% CI</th>
+      <th>Prior</th>
+    </tr>
+    <tr>
+      <th>Parameter</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>mass_1</th>
+      <td>${77.74}_{-26.41}^{+15.11}$</td>
+      <td>Constraint(minimum=5, maximum=100, name='mass_...</td>
+    </tr>
+    <tr>
+      <th>mass_2</th>
+      <td>${38.82}_{-14.93}^{+26.36}$</td>
+      <td>Constraint(minimum=5, maximum=100, name='mass_...</td>
+    </tr>
+    <tr>
+      <th>chirp_mass</th>
+      <td>${44.08}_{-13.21}^{+19.85}$</td>
+      <td>bilby.gw.prior.UniformInComponentsChirpMass(mi...</td>
+    </tr>
+    <tr>
+      <th>mass_ratio</th>
+      <td>${0.62}_{-0.31}^{+0.28}$</td>
+      <td>bilby.gw.prior.UniformInComponentsMassRatio(mi...</td>
+    </tr>
+    <tr>
+      <th>a_1</th>
+      <td>${0.57}_{-0.34}^{+0.24}$</td>
+      <td>Uniform(minimum=0, maximum=0.99, name='a_1', l...</td>
+    </tr>
+    <tr>
+      <th>a_2</th>
+      <td>${0.59}_{-0.45}^{+0.29}$</td>
+      <td>Uniform(minimum=0, maximum=0.99, name='a_2', l...</td>
+    </tr>
+    <tr>
+      <th>tilt_1</th>
+      <td>${1.54}_{-0.64}^{+0.90}$</td>
+      <td>Sine(minimum=0, maximum=3.141592653589793, nam...</td>
+    </tr>
+    <tr>
+      <th>tilt_2</th>
+      <td>${1.43}_{-0.65}^{+0.89}$</td>
+      <td>Sine(minimum=0, maximum=3.141592653589793, nam...</td>
+    </tr>
+    <tr>
+      <th>chi_eff</th>
+      <td>${-0.02}_{-0.25}^{+0.27}$</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <th>chi_p</th>
+      <td>${0.51}_{-0.31}^{+0.21}$</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <th>ra</th>
+      <td>${3.42}_{-1.99}^{+1.61}$</td>
+      <td>Uniform(minimum=0, maximum=6.283185307179586, ...</td>
+    </tr>
+    <tr>
+      <th>dec</th>
+      <td>${-0.04}_{-0.79}^{+0.73}$</td>
+      <td>Cosine(minimum=-1.5707963267948966, maximum=1....</td>
+    </tr>
+    <tr>
+      <th>geocent_time</th>
+      <td>${2.00}_{-0.00}^{+0.00}$</td>
+      <td>DeltaFunction(peak=2, name=None, latex_label=N...</td>
+    </tr>
+    <tr>
+      <th>luminosity_distance</th>
+      <td>${3252.88}_{-1155.71}^{+1265.73}$</td>
+      <td>bilby.gw.prior.UniformSourceFrame(minimum=100....</td>
+    </tr>
+    <tr>
+      <th>phase</th>
+      <td>${3.44}_{-2.05}^{+2.19}$</td>
+      <td>Uniform(minimum=0, maximum=6.283185307179586, ...</td>
+    </tr>
+    <tr>
+      <th>psi</th>
+      <td>${1.60}_{-1.01}^{+1.23}$</td>
+      <td>Uniform(minimum=0, maximum=3.141592653589793, ...</td>
+    </tr>
+    <tr>
+      <th>phi_jl</th>
+      <td>${3.41}_{-1.94}^{+1.70}$</td>
+      <td>Uniform(minimum=0, maximum=6.283185307179586, ...</td>
+    </tr>
+    <tr>
+      <th>phi_12</th>
+      <td>${3.30}_{-1.90}^{+2.36}$</td>
+      <td>Uniform(minimum=0, maximum=6.283185307179586, ...</td>
+    </tr>
+    <tr>
+      <th>phi_jl</th>
+      <td>${3.41}_{-1.94}^{+1.70}$</td>
+      <td>Uniform(minimum=0, maximum=6.283185307179586, ...</td>
+    </tr>
+    <tr>
+      <th>theta_jn</th>
+      <td>${1.57}_{-0.79}^{+0.74}$</td>
+      <td>Sine(minimum=0, maximum=3.141592653589793, nam...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">nrsur_result</span><span class="o">.</span><span class="n">plot_corner</span><span class="p">([</span><span class="s2">&quot;mass_1&quot;</span><span class="p">,</span> <span class="s2">&quot;mass_2&quot;</span><span class="p">,</span> <span class="s2">&quot;chirp_mass&quot;</span><span class="p">,</span> <span class="s2">&quot;mass_ratio&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/GW202612_7_0.png" src="../_images/GW202612_7_0.png" />
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
@@ -523,12 +608,18 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/GW202612_8_0.png" src="../_images/GW202612_8_0.png" />
+</div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">nrsur_result</span><span class="o">.</span><span class="n">plot_corner</span><span class="p">([</span><span class="s2">&quot;mass_ratio&quot;</span><span class="p">,</span> <span class="s2">&quot;chi_eff&quot;</span><span class="p">,</span> <span class="s2">&quot;chi_p&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/GW202612_9_0.png" src="../_images/GW202612_9_0.png" />
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
@@ -537,12 +628,34 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/GW202612_10_0.png" src="../_images/GW202612_10_0.png" />
+</div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">nrsur_result</span><span class="o">.</span><span class="n">plot_signal</span><span class="p">(</span><span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:58:09|WARNING| <span class=" -Color -Color-Green">n_samples &gt; len(posterior), using n_samples = len(posterior)</span> 
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XLAL Error - NRSur7dq4_Init_LALDATA (LALSimIMRPrecessingNRSur.c:184): Unable to resolve data file NRSur7dq4.h5 in $LAL_DATA_PATH
+
+XLAL Error - NRSur7dq4_Init_LALDATA (LALSimIMRPrecessingNRSur.c:184): I/O error
+XLAL Error - PrecessingNRSur_core (LALSimIMRPrecessingNRSur.c:1836): Error loading surrogate data.
+
+XLAL Error - PrecessingNRSur_core (LALSimIMRPrecessingNRSur.c:1836): Generic failure
+XLAL Error - XLALSimInspiralChooseTDWaveform (LALSimInspiral.c:1232): Internal function call failed: Generic failure
+XLAL Error - XLALSimInspiralTDFromTD (LALSimInspiral.c:2533): Internal function call failed: Generic failure
+XLAL Error - XLALSimInspiralTD (LALSimInspiral.c:2780): Internal function call failed: Generic failure
+XLAL Error - XLALSimInspiralFD (LALSimInspiral.c:3021): Internal function call failed: Generic failure
+|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 16:58:09|WARNING| <span class=" -Color -Color-Green">Unable to create a waveform: do you have NrSur7dq4 installed? Defaulting to IMRPhenomPv2</span> 
+</pre></div>
+</div>
+<img alt="../_images/GW202612_11_2.png" src="../_images/GW202612_11_2.png" />
 </div>
 </div>
 </section>
