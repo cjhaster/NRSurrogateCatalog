@@ -245,7 +245,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/cjhaster/NRSurCatalog/main?urlpath=tree/events/GW170729.ipynb"
+        <a href="https://mybinder.org/v2/gh/cjhaster/NRSurrogateCatalog/gh-pages?urlpath=tree/events/GW170729.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -263,7 +263,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/cjhaster/NRSurCatalog/blob/main/events/GW170729.ipynb"
+        <a href="https://colab.research.google.com/github/cjhaster/NRSurrogateCatalog/blob/gh-pages/events/GW170729.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -306,7 +306,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/cjhaster/NRSurCatalog"
+        <a href="https://github.com/cjhaster/NRSurrogateCatalog"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -323,7 +323,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/cjhaster/NRSurCatalog/issues/new?title=Issue%20on%20page%20%2Fevents/GW170729.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/cjhaster/NRSurrogateCatalog/issues/new?title=Issue%20on%20page%20%2Fevents/GW170729.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -435,9 +435,14 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>! python -m pip install –upgrade pip -q
-! pip install nrsur_catalog -q
-! pip install -e “git+https://github.com/cjhaster/NRSurrogateCatalog&#64;main#egg=nrsur_catalog” -q</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip<span class="w"> </span>-q
+<span class="o">!</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;nrsur_catalog @ git+https://github.com/cjhaster/NRSurrogateCatalog@main#egg&quot;</span><span class="w"> </span>-q
+</pre></div>
+</div>
+</div>
+</div>
 <section class="tex2jax_ignore mathjax_ignore" id="gw170729">
 <h1>GW170729<a class="headerlink" href="#gw170729" title="Permalink to this headline">#</a></h1>
 <p>Below are some plots for GW170729 from the NRSurrogate Catalog.</p>
@@ -457,7 +462,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 17:21:40|INFO| <span class=" -Color -Color-Green">Setting cache dir to: /Users/avaj0001/Documents/projects/nrsurrogate_catalog/tests/test_events_dir</span> 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 17:38:38|INFO| <span class=" -Color -Color-Green">Setting cache dir to: /Users/avaj0001/Documents/projects/nrsurrogate_catalog/tests/test_events_dir</span> 
 </pre></div>
 </div>
 <div class="output text_html"><div>
@@ -649,7 +654,7 @@ XLAL Error - XLALSimInspiralChooseTDWaveform (LALSimInspiral.c:1232): Internal f
 XLAL Error - XLALSimInspiralTDFromTD (LALSimInspiral.c:2533): Internal function call failed: Generic failure
 XLAL Error - XLALSimInspiralTD (LALSimInspiral.c:2780): Internal function call failed: Generic failure
 XLAL Error - XLALSimInspiralFD (LALSimInspiral.c:3021): Internal function call failed: Generic failure
-|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 17:21:46|WARNING| <span class=" -Color -Color-Green">Unable to create a waveform: do you have NrSur7dq4 installed? Defaulting to IMRPhenomPv2</span> 
+|<span class=" -Color -Color-Blue">NURSUR CATALOG</span>|22/02 17:38:45|WARNING| <span class=" -Color -Color-Green">Unable to create a waveform: do you have NrSur7dq4 installed? Defaulting to IMRPhenomPv2</span> 
 </pre></div>
 </div>
 <img alt="../_images/GW170729_11_1.png" src="../_images/GW170729_11_1.png" />
