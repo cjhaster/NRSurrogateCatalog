@@ -1,7 +1,5 @@
 # NRSur Events
-
 Table of all the events analyses in the NRSur Catalog.
-
 |NRSurrogate Fits| |
 |:---------------:|:---------------:|
 |[GW170729](GW170729.ipynb)|![GW170729](GW170729_waveform.png)|
